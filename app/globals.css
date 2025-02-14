@@ -7,15 +7,65 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+html,
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+.allWaves {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #1eacc5;
+}
+
+.ondas {
+  background-image: url("./assets/images/onda.png");
+  background-size: 1440px 100px;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  animation: flutter 3s infinite ease-in-out alternate;
+  transition: background-position 0.1s linear; /* Suaviza a mudança no scroll */
+}
+
+#onda1 {
+  z-index: 1000;
+  opacity: 1;
+  background-position-x: 400px;
+}
+
+#onda2 {
+  z-index: 800;
+  opacity: 0.5;
+  background-position-x: 300px;
+}
+
+#onda3 {
+  z-index: 600;
+  opacity: 0.2;
+  background-position-x: 200px;
+}
+
+#onda4 {
+  z-index: 400;
+  opacity: 0.8;
+  background-position-x: 100px;
+}
+
+@keyframes flutter {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
 }
