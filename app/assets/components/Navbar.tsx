@@ -27,6 +27,11 @@ function Navbar() {
         <ul className="flex justify-center gap-6 p-10 text-zinc-800 ">
           <li>
             <a href="#" className="hover:text-zinc-600">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#" className="hover:text-zinc-600">
               Sobre
             </a>
           </li>
@@ -86,56 +91,56 @@ function Navbar() {
           accusamus animi enim maiores.
         </p>
       </div>
-      <div className=" py-10 gap-2 flex flex-wrap justify-center items-center mx-auto my-32">
-        <div>
+      <div className=" py-10 gap-7 flex flex-wrap justify-center items-center mx-auto my-32">
+        <div className="flex flex-col gap-2">
           <Image
             src={img1}
             alt="Descrição da imagem"
-            className="rounded-full w-40 h-40"
+            className="rounded-full w-40 h-60 object-cover"
           />
           <Image
             src={img2}
             alt="Descrição da imagem"
-            className="rounded-full w-40 h-40"
+            className="rounded-full w-40 h-60 object-cover"
           />
           <Image
             src={img3}
             alt="Descrição da imagem"
-            className="rounded-full w-40 h-40"
+            className="rounded-full w-40 h-60 object-cover"
           />
         </div>
-        <div className="mb-24">
+        <div className="mb-40 flex flex-col gap-2">
           <Image
             src={img1}
             alt="Descrição da imagem"
-            className="rounded-full w-40 h-40"
+            className="rounded-full w-40 h-60 object-cover"
           />
           <Image
             src={img4}
             alt="Descrição da imagem"
-            className="rounded-full w-40 h-40"
+            className="rounded-full w-40 h-60 object-cover"
           />
           <Image
             src={img5}
             alt="Descrição da imagem"
-            className="rounded-full w-40 h-40"
+            className="rounded-full w-40 h-60 object-cover"
           />
         </div>
-        <div>
+        <div className="flex flex-col gap-2">
           <Image
             src={img3}
             alt="Descrição da imagem"
-            className="rounded-full w-40 h-40"
+            className="rounded-full w-40 h-60 object-cover"
           />
           <Image
             src={img4}
             alt="Descrição da imagem"
-            className="rounded-full w-40 h-40"
+            className="rounded-full w-40 h-60 object-cover"
           />
           <Image
             src={img5}
             alt="Descrição da imagem"
-            className="rounded-full w-40 h-40"
+            className="rounded-full w-40 h-60 object-cover"
           />
         </div>
       </div>
