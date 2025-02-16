@@ -7,6 +7,8 @@ import img2 from "../images/img2.png";
 import img3 from "../images/img3.png";
 import img4 from "../images/img4.png";
 import img5 from "../images/img5.png";
+import dr from "../images/dr.png";
+import fisio1 from "../images/fisio2.png";
 
 function Navbar() {
   const [scrollY, setScrollY] = useState(0);
@@ -24,45 +26,54 @@ function Navbar() {
 
   return (
     <div>
-      <nav className="absolute top-0 left-0 right-0 z-30">
-        <ul className="flex justify-center gap-6 p-10 text-zinc-800 ">
+      <nav className="absolute top-0 left-0 right-0 z-30 bg-gray-900 rounded-b-xl border-b-4 border-gray-950 ">
+        <ul className="flex justify-center gap-6 p-10 text-slate-50 ">
           <li>
-            <Link href="/" className="hover:text-zinc-600">
+            <Link href="/" className="hover:text-gray-950 transition">
               Início
             </Link>
           </li>
           <li>
-            <a href="#" className="hover:text-zinc-600">
-              <Link href="/" className="hover:text-zinc-600">
-                Especialidades
-              </Link>
-            </a>
+            <Link href="/" className="hover:text-gray-950 transition">
+              Especialidades
+            </Link>
           </li>
           <li>
-            <Link href="/" className="hover:text-zinc-600">
+            <Link href="/" className="hover:text-gray-950 transition">
               Sobre
             </Link>
           </li>
           <li>
-            <Link href="/contact" className="hover:text-zinc-600">
+            <Link href="/contact" className="hover:text-gray-950 transition">
               Contato
             </Link>
           </li>
           <li>
-            <Link href="/" className="hover:text-zinc-600">
+            <Link href="/" className="hover:text-gray-950 transition">
               Sociais
             </Link>
           </li>
         </ul>
       </nav>
 
-      <div className="allWaves flex justify-center  items-center">
-        {" "}
-        <div className="textDiv absolute w-full h-48 bg-zinc-50 opacity-50 top-1/2 -translate-y-1/2"></div>
-        <div className="textDiv w-full p-10 relative">
-          <h1 className="text-8xl text-zinc-800 text-center opacity-100">
-            Se sinta nas nuvens...
+      <div className="allWaves flex justify-center  items-center bg-gray-600">
+        <div className="w-96 text-center">
+          <h1 className="font-semibold text-3xl text-orange-500">
+            Proporcionando mais qualidade de vida através do movimento.
           </h1>
+          <p className="text-gray-700">
+            Um espaço dedicado a atender homens e mulheres de todas as idades.
+          </p>
+          <button className="border-none bg-slate-100 text-gray-950 rounded-full py-2 px-5 my-4 font-bold hover:bg-gray-950 hover:text-gray-100 transition">
+            Agendar agora
+          </button>
+        </div>
+        <div>
+          <Image
+            src={fisio1}
+            alt="Descrição da imagem"
+            className="rounded-xl w-96 h-96 object-cover"
+          />
         </div>
         <div
           className="ondas"
