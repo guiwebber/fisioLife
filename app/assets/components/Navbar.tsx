@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import img1 from "../images/img1.png";
 import img2 from "../images/img2.png";
@@ -26,29 +27,31 @@ function Navbar() {
       <nav className="absolute top-0 left-0 right-0 z-30">
         <ul className="flex justify-center gap-6 p-10 text-zinc-800 ">
           <li>
-            <a href="#" className="hover:text-zinc-600">
+            <Link href="/" className="hover:text-zinc-600">
               Home
-            </a>
+            </Link>
           </li>
           <li>
             <a href="#" className="hover:text-zinc-600">
-              Sobre
+              <Link href="/" className="hover:text-zinc-600">
+                Quem somos
+              </Link>
             </a>
           </li>
           <li>
-            <a href="#" className="hover:text-zinc-600">
-              Contato
-            </a>
-          </li>
-          <li>
-            <a href="#" className="hover:text-zinc-600">
+            <Link href="/" className="hover:text-zinc-600">
               Tratamentos
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:text-zinc-600">
+            <Link href="/contact" className="hover:text-zinc-600">
+              Contato
+            </Link>
+          </li>
+          <li>
+            <Link href="/" className="hover:text-zinc-600">
               Onde estamos
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
