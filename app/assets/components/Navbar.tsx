@@ -28,19 +28,19 @@ function Navbar() {
         <ul className="flex justify-center gap-6 p-10 text-zinc-800 ">
           <li>
             <Link href="/" className="hover:text-zinc-600">
-              Home
+              Início
             </Link>
           </li>
           <li>
             <a href="#" className="hover:text-zinc-600">
               <Link href="/" className="hover:text-zinc-600">
-                Quem somos
+                Especialidades
               </Link>
             </a>
           </li>
           <li>
             <Link href="/" className="hover:text-zinc-600">
-              Tratamentos
+              Sobre
             </Link>
           </li>
           <li>
@@ -50,7 +50,7 @@ function Navbar() {
           </li>
           <li>
             <Link href="/" className="hover:text-zinc-600">
-              Onde estamos
+              Sociais
             </Link>
           </li>
         </ul>
