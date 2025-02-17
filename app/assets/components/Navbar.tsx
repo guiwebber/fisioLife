@@ -7,7 +7,6 @@ import img2 from "../images/img2.png";
 import img3 from "../images/img3.png";
 import img4 from "../images/img4.png";
 import img5 from "../images/img5.png";
-import dr from "../images/dr.png";
 import fisio1 from "../images/fisio2.png";
 
 function Navbar() {
